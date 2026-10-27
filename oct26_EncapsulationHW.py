@@ -4,7 +4,7 @@
 class BankAccount:
     def __init__(self, name, account_no, bank_name, balance):
         self.name = name
-        self.account_no = account_no
+        self.__account_no = account_no
         self.bank_name = bank_name
         self.__balance = balance
 
@@ -13,7 +13,7 @@ class BankAccount:
         return self.name
 
     def get_account_no(self):
-        return self.account_no
+        return self.__account_no
 
     def get_bank_name(self):
         return self.bank_name
